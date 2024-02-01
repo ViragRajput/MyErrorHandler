@@ -1,4 +1,14 @@
 {
+    "name": "viragrajput/my-error-handler-package",
+    "description": "Simple php pretty custom error handler package",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Virag Rajput",
+            "email": "codewithvirag@gmail.com"
+        }
+    ],
+
     "require": {
         "symfony/var-dumper": "^6.4"
     },
