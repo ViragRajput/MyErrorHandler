@@ -1,7 +1,5 @@
 <?php
 
-// MyErrorHandler/index.php
-
 require_once 'vendor/autoload.php';
 
 use MyErrorHandler\ErrorHandler;

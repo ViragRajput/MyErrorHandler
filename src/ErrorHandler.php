@@ -6,6 +6,16 @@ use Symfony\Component\VarDumper\VarDumper;
 
 class ErrorHandler
 {
+    /**
+     * Handle the error and customize the response or log the error.
+     *
+     * @param mixed $errorType 
+     * @param mixed $errorMessage 
+     * @param mixed $file 
+     * @param mixed $line 
+     * @throws PrettyException description of exception
+     * @return void
+     */
     public static function handle($errorType, $errorMessage, $file, $line)
     {
         if ($errorType === E_USER_ERROR) {

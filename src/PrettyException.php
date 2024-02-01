@@ -6,17 +6,35 @@ class PrettyException extends \Exception
 {
     protected $errorType;
 
+    /**
+     * Constructs a new instance of the class.
+     *
+     * @param string $message 
+     * @param int $code 
+     * @param \Throwable $previous 
+     * @param int $errorType 
+     */
     public function __construct($message = "", $code = 0, \Throwable $previous = null, $errorType = 0)
     {
         parent::__construct($message, $code, $previous);
         $this->errorType = $errorType;
     }
 
+    /**
+     * A description of the __toString PHP function.
+     *
+     * @return Some_Return_Value
+     */
     public function __toString()
     {
         return $this->render();
     }
 
+    /**
+     * Render the HTML for error details and stack trace.
+     *
+     * @return string
+     */
     public function render()
     {
         $html = '<div style="font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif; padding: 1em; color: #333; background-color: #fff; border-radius: 5px; border: 1px solid #ccc; margin: 20px;">';

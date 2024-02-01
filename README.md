@@ -1,3 +1,3 @@
 # MyErrorHandler
  php error handler package
- updated
+ refactor code and updated comment
