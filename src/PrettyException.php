@@ -20,7 +20,7 @@ class PrettyException extends \Exception
     public function render()
     {
         $html = '<div style="font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif; padding: 1em; color: #333; background-color: #fff; border-radius: 5px; border: 1px solid #ccc; margin: 20px;">';
-        $html .= '<style>body {margin: 0; font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;} div {margin: 0 auto; max-width: 800px; padding: 20px;}</style>';
+        $html .= '<style>body {margin: 0; font-family: \'Helvetica Neue\', Helvetica, Arial, sans-serif;} div {margin: 0 auto; max-width: 900px; padding: 20px;}</style>';
         $html .= '<h2 style="color: #d9534f;">Error Details:</h2>';
         $html .= '<p><strong>Type:</strong> ' . get_class($this) . '</p>';
         $html .= '<p><strong>Message:</strong> ' . $this->getMessage() . '</p>';
@@ -31,7 +31,7 @@ class PrettyException extends \Exception
 
         // Display stack trace
         $html .= '<h3 style="color: #d9534f;">Stack Trace:</h3>';
-        $html .= '<pre style="background-color: #f9f9f9; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.85em;">';
+        $html .= '<pre style="background-color: #f9f9f9; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.95em;">';
         $html .= htmlspecialchars($this->getTraceAsString());
         $html .= '</pre>';
 
